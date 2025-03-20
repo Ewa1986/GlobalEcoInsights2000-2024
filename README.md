@@ -81,13 +81,31 @@ Columns: 10
  * Comparative Analysis: Used to evaluate how forest area percentage influences extreme weather events.
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+| Business Requirement | Rationale  | Visualisations|
+| :-------------: |:-------------:| :-----:|
+| Identify temperature trends over the years| Line charts and time series plots can visually represent temperature changes, making it easier to observe patterns and trends.| Line Chart, Time Series Plot |
+| Assess the impact of renewable energy on CO2 emissions |Scatter plots and regression analysis visualisations can illustrate the correlation between renewable energy adoption and CO2 emissions, showing the effectiveness of renewable energy policies. | Scatter Plot, Regression Plot |
+| Analyse the effect of forest area reduction on extreme weather events | Comparative bar charts or scatter plots can be used to show the relationship between forest area percentages and extreme weather events.|	Bar Chart, Scatter Plot |
+| Evaluate population growth's impact on CO2 emissions and sea level rise |	Regression analysis visuals, and heatmaps can provide insights into how population growth contributes to CO2 emissions and rising sea levels. | Regression Plot, Heatmap |
+| Create interactive dashboards for stakeholders |	Dashboards with interactive charts and filters enable stakeholders to explore insights easily.|	Tableau Dashboard, Filterable Visualisations
 
-## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+## Analysis Techniques used -
+
+#### Data Analysis Techniques and Limitations
+* Trend Analysis: Applied for temperature change detection using time series data.
+    * Limitation: Seasonal variations might obscure long-term trends.
+* Correlation Analysis: Used to measure relationships between variables like CO2 emissions and renewable energy adoption.  
+    * Limitation: Correlation doesn't imply causation.
+* Regression Analysis: Implemented to predict sea level rise and CO2 emissions based on population growth. 
+    * Limitation: Multicollinearity can reduce the accuracy of predictions.
+* Comparative Analysis: Used to examine how forest area reduction impacts extreme weather events.  
+    * Limitation: Requires comprehensive data on regional weather patterns.
+
+#### Use of Generative AI Tools
+
+* Ideation: AI-assisted brainstorming was used to generate hypotheses and explore different perspectives.
+* Design Thinking: Generative AI suggested effective visualization designs for clearer insights.
+* Code Optimisation: AI helped in refactoring and optimizing complex analytical code, improving efficiency and clarity.
 
 ## Ethical considerations
 * Were there any data privacy, bias or fairness issues with the data?
