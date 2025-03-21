@@ -5,48 +5,107 @@
 
 The goal of this project is to provide actionable insights into the effects of climate change by identifying trends and correlations within the dataset. These insights can support policy decisions, promote sustainable practices, and increase public awareness of climate-related issues.
 
-#### Overview 
+## Overview 
 This dataset contains temperature and climate-related data for various countries over multiple years. It includes information on temperature, CO2 emissions, sea level rise, rainfall, population, renewable energy usage, extreme weather events, and forest area.
 
-#### Dataset Content
+## Dataset Content -
 
 Filename: temperature.csv
 Rows: 1000
 Columns: 10
 
-##### Column Descriptions
-Year (int) - The year of the recorded data.
-Country (string) - The name of the country.
-Avg_Temperature_degC (float) - The average annual temperature in degrees Celsius.
-CO2_Emissions_tons_per_capita (float) - CO2 emissions in tons per capita.
-Sea_Level_Rise_mm (float) - Sea level rise in millimeters.
-Rainfall_mm (int) - Total annual rainfall in millimeters.
-Population (int)- The population of the country.
-Renewable_Energy_pct (float) - Percentage of total energy consumption from renewable sources.
-Extreme_Weather_Events (int) - Number of recorded extreme weather events.
-Forest_Area_pct (float) - Percentage of land area covered by forests.
+#### Column Descriptions
+
+* Year (int) - The year of the recorded data.
+* Country (string) - The name of the country.
+* Avg_Temperature_degC (float) - The average annual temperature in degrees Celsius.
+* CO2_Emissions_tons_per_capita (float) - CO2 emissions in tons per capita.
+* Sea_Level_Rise_mm (float) - Sea level rise in millimeters.
+* Rainfall_mm (int) - Total annual rainfall in millimeters.
+* Population (int)- The population of the country.
+* Renewable_Energy_pct (float) - Percentage of total energy consumption from renewable sources.
+* Extreme_Weather_Events (int) - Number of recorded extreme weather events.
+* Forest_Area_pct (float) - Percentage of land area covered by forests.
+
+## Business Requirements -
+
+* Identify trends and correlations between variables (e.g., temperature vs. CO2 emissions, sea level rise vs. extreme weather events).
+* Perform time-series analysis to observe changes over time.
+* Conduct geospatial analysis to compare data across different countries.
+* Create interactive dashboards and visualizations to present insights.
+* Develop a user-friendly interface for stakeholders to explore data and insights.
+* Ensure accessibility and ease of use for non-technical users.
 
 
-## Business Requirements
-* Describe your business requirements
+## Hypothesis and Validations -
 
+### Hypothesis 1 : Average temperature has increased over the years
+  ##### Validation - Perform a trend analysis using linear regression or time series analysis on the Avg_Temperature_degC column across different years. Visualise the trend using line charts to observe any significant increase over time.
 
-## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+### Hypothesis 2 : Countries with a higher percentage of renewable energy have lower CO2 emissions.
+   ##### Validation - Conduct a correlation analysis between Renewable_Energy_pct and CO2_Emissions_tons_per_capita. A negative correlation would support the hypothesis. Additionally, scatter plots and regression models can further confirm the relationship.
+
+### Hypothesis 3 : A decrease in forest area percentage leads to an increase in extreme weather events.
+  ##### Validation - Perform a comparative analysis using Forest_Area_pct and Extreme_Weather_Events data. Use correlation analysis and visualize the results using scatter plots. A significant negative correlation would support this hypothesis.
+
+### Hypothesis 4 : Higher population growth contributes to increased CO2 emissions and rising sea levels.
+  ##### Validation - Analyse the relationship between Population, CO2_Emissions_tons_per_capita, and Sea_Level_Rise_mm using multiple regression analysis. Evaluate the strength of the relationships through coefficients and significance levels.
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+#### Step 1: Data Collection
+ * Collect temperature and climate-related data from reliable sources for educational studies like Kaggle source.
+ * Ensure the data covers a diverse set of countries over multiple years for comprehensive analysis.
+
+#### Step 2: Data Cleaning
+ * Perform data cleaning to handle missing values, outliers, or inconsistent data.
+ * Standardise data formats and convert units if necessary.
+ * Store the cleaned data in a structured format using CSV or database systems for easy access.
+
+#### Step 3: Data Analysis
+ * Conduct exploratory data analysis (EDA) to identify trends, patterns, and correlations.
+ * Apply statistical analysis, including linear regression, correlation analysis, and hypothesis testing.
+ * Create visualisations using libraries like Matplotlib,Plotly or Seaborn to enhance interpretation.
+
+#### Step 4: Interpretation and Insights
+ * Evaluate the analysis results to confirm or refute the proposed hypotheses.
+ * Identify actionable insights and trends in temperature changes, CO2 emissions, renewable energy impact, and forest area changes.
+
+#### Step 5: Visualisation and Documentation
+ * Document findings using visual reports, Tableau dashboards and presentations.
+ * Provide recommendations based on the analysis to inform policy decisions and sustainable practices.
+
+### Research Methodology
+ * Trend Analysis: Used to identify long-term temperature changes over the years.
+ * Correlation Analysis: Applied to measure the strength and direction of relationships between variables such as renewable energy usage and CO2 emissions.
+ * Regression Models: Implemented to predict outcomes based on independent variables like population growth and CO2 emissions.
+ * Comparative Analysis: Used to evaluate how forest area percentage influences extreme weather events.
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+| Business Requirement | Rationale  | Visualisations|
+| :-------------: |:-------------:| :-----:|
+| Identify temperature trends over the years| Line charts and time series plots can visually represent temperature changes, making it easier to observe patterns and trends.| Line Chart, Time Series Plot |
+| Assess the impact of renewable energy on CO2 emissions |Scatter plots and regression analysis visualisations can illustrate the correlation between renewable energy adoption and CO2 emissions, showing the effectiveness of renewable energy policies. | Scatter Plot, Regression Plot |
+| Analyse the effect of forest area reduction on extreme weather events | Comparative bar charts or scatter plots can be used to show the relationship between forest area percentages and extreme weather events.|	Bar Chart, Scatter Plot |
+| Evaluate population growth's impact on CO2 emissions and sea level rise |	Regression analysis visuals, and heatmaps can provide insights into how population growth contributes to CO2 emissions and rising sea levels. | Regression Plot, Heatmap |
+| Create interactive dashboards for stakeholders |	Dashboards with interactive charts and filters enable stakeholders to explore insights easily.|	Tableau Dashboard, Filterable Visualisations
 
-## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+## Analysis Techniques used -
+
+#### Data Analysis Techniques and Limitations
+* Trend Analysis: Applied for temperature change detection using time series data.
+    * Limitation: Seasonal variations might obscure long-term trends.
+* Correlation Analysis: Used to measure relationships between variables like CO2 emissions and renewable energy adoption.  
+    * Limitation: Correlation doesn't imply causation.
+* Regression Analysis: Implemented to predict sea level rise and CO2 emissions based on population growth. 
+    * Limitation: Multicollinearity can reduce the accuracy of predictions.
+* Comparative Analysis: Used to examine how forest area reduction impacts extreme weather events.  
+    * Limitation: Requires comprehensive data on regional weather patterns.
+
+#### Use of Generative AI Tools
+
+* Ideation: AI-assisted brainstorming was used to generate hypotheses and explore different perspectives.
+* Design Thinking: Generative AI suggested effective visualization designs for clearer insights.
+* Code Optimisation: AI helped in refactoring and optimizing complex analytical code, improving efficiency and clarity.
 
 ## Ethical considerations
 * Were there any data privacy, bias or fairness issues with the data?
@@ -104,5 +163,5 @@ Forest_Area_pct (float) - Percentage of land area covered by forests.
 
 
 
-## Acknowledgements (optional)
+## Acknowledgements
 * Thank the people who provided support through this project.
