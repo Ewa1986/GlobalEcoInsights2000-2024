@@ -1,9 +1,12 @@
 
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# GlobalEcoInsights 
+<img src="global-insights.jpg" alt="Global EcoInsights" style="width: 100px; height: 100px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);"/> 
 
-The goal of this project is to provide actionable insights into the effects of climate change by identifying trends and correlations within the dataset. These insights can support policy decisions, promote sustainable practices, and increase public awareness of climate-related issues.
+# GlobalEco Insights
+
+#### The goal of this project is to provide actionable insights into the effects of climate change by identifying trends and correlations within the dataset. These insights can support policy decisions, promote sustainable practices, and increase public awareness of climate-related issues.
+
+<img src="global_eco_innovation_.jpg" alt="Global Eco Innovation" style="width: 800px; height: 200px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);"/>
 
 ## Overview 
 This dataset contains temperature and climate-related data for various countries over multiple years. It includes information on temperature, CO2 emissions, sea level rise, rainfall, population, renewable energy usage, extreme weather events, and forest area.
@@ -161,7 +164,7 @@ Columns: 10
 - The photos used on the home and sign-up page are from This Open-Source site
 - The images used for the gallery page were taken from this other open-source site
 
-
+# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 ## Acknowledgements
 * Thank the people who provided support through this project.
