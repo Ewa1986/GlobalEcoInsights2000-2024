@@ -115,10 +115,33 @@ Columns: 10
 * How did you overcome any legal or societal issues?
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+
+This Tableau dashboard titled "Global EcoInsights" provides an interactive visual representation of global climate data.
+* Temperature Trend:-
+  * Displays the average temperature change over time from 2000 to 2025.
+  * The green line shows temperature fluctuations, and a red dashed line indicates a reference trend.
+* Renewables vs CO₂ Emissions:-
+  * A scatter plot visualising the relationship between the percentage of renewable energy used and CO₂ emissions.
+  * Different countries are represented with various colors.
+* Forest vs Weather Events:-
+  * Shows how the forest area (percentage of land) is related to extreme weather events over time.
+* Population vs CO₂ & Sea Level:-
+  * A bubble chart depicting the correlation between population size, CO₂ emissions per capita, and sea level rise.
+  * Bubble size and color represent different countries and their emission levels.
+* Global Climate Map:-
+  * A geographical visualisation using a world map, representing data related to temperature changes, emissions, or climate impact.
+* Interactive Controls:-
+  * Year Slider: Allows users to filter data for a specific year range.
+  * Country Filter: Enables users to focus on specific countries.
+  * Sea Level Rise Markers: Displays sea level rise measurements using selectable radio buttons.
+  * Temperature Indicator: Provides a color-coded bar displaying average temperatures.
+
+![alt text](<Insights Tableau_dashboard.png>)
+
+https://public.tableau.com/app/profile/mukti.mathapati/viz/GlobalEcoInsights_17425611140370/GlobalEcoInsightsReport?publish=yes
+
+### Key Insights 
+This dashboard effectively visualises the interconnections between population growth, CO₂ emissions, renewable energy adoption, forest cover, and climate impacts like temperature rise and sea level changes. It’s a valuable tool for decision-makers and environmental analysts to track and predict climate change impacts.
 
 ## Unfixed Bugs
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
@@ -128,20 +151,6 @@ Columns: 10
 ## Development Roadmap
 * What challenges did you face, and what strategies were used to overcome these challenges?
 * What new skills or tools do you plan to learn next based on your project experience? 
-
-## Deployment
-### Heroku
-
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 
 ## Main Data Analysis Libraries
