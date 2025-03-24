@@ -1,9 +1,12 @@
 
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# GlobalEcoInsights 
+<img src="global-insights.jpg" alt="Global EcoInsights" style="width: 100px; height: 100px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);"/> 
 
-The goal of this project is to provide actionable insights into the effects of climate change by identifying trends and correlations within the dataset. These insights can support policy decisions, promote sustainable practices, and increase public awareness of climate-related issues.
+# GlobalEco Insights
+
+#### The goal of this project is to provide actionable insights into the effects of climate change by identifying trends and correlations within the dataset. These insights can support policy decisions, promote sustainable practices, and increase public awareness of climate-related issues.
+
+<img src="global_eco_innovation_.jpg" alt="Global Eco Innovation" style="width: 800px; height: 200px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);"/>
 
 ## Overview 
 This dataset contains temperature and climate-related data for various countries over multiple years. It includes information on temperature, CO2 emissions, sea level rise, rainfall, population, renewable energy usage, extreme weather events, and forest area.
@@ -81,23 +84,64 @@ Columns: 10
  * Comparative Analysis: Used to evaluate how forest area percentage influences extreme weather events.
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+| Business Requirement | Rationale  | Visualisations|
+| :-------------: |:-------------:| :-----:|
+| Identify temperature trends over the years| Line charts and time series plots can visually represent temperature changes, making it easier to observe patterns and trends.| Line Chart, Time Series Plot |
+| Assess the impact of renewable energy on CO2 emissions |Scatter plots and regression analysis visualisations can illustrate the correlation between renewable energy adoption and CO2 emissions, showing the effectiveness of renewable energy policies. | Scatter Plot, Regression Plot |
+| Analyse the effect of forest area reduction on extreme weather events | Comparative bar charts or scatter plots can be used to show the relationship between forest area percentages and extreme weather events.|	Bar Chart, Scatter Plot |
+| Evaluate population growth's impact on CO2 emissions and sea level rise |	Regression analysis visuals, and heatmaps can provide insights into how population growth contributes to CO2 emissions and rising sea levels. | Regression Plot, Heatmap |
+| Create interactive dashboards for stakeholders |	Dashboards with interactive charts and filters enable stakeholders to explore insights easily.|	Tableau Dashboard, Filterable Visualisations
 
-## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+## Analysis Techniques used -
+
+#### Data Analysis Techniques and Limitations
+* Trend Analysis: Applied for temperature change detection using time series data.
+    * Limitation: Seasonal variations might obscure long-term trends.
+* Correlation Analysis: Used to measure relationships between variables like CO2 emissions and renewable energy adoption.  
+    * Limitation: Correlation doesn't imply causation.
+* Regression Analysis: Implemented to predict sea level rise and CO2 emissions based on population growth. 
+    * Limitation: Multicollinearity can reduce the accuracy of predictions.
+* Comparative Analysis: Used to examine how forest area reduction impacts extreme weather events.  
+    * Limitation: Requires comprehensive data on regional weather patterns.
+
+#### Use of Generative AI Tools
+
+* Ideation: AI-assisted brainstorming was used to generate hypotheses and explore different perspectives.
+* Design Thinking: Generative AI suggested effective visualization designs for clearer insights.
+* Code Optimisation: AI helped in refactoring and optimizing complex analytical code, improving efficiency and clarity.
 
 ## Ethical considerations
 * Were there any data privacy, bias or fairness issues with the data?
 * How did you overcome any legal or societal issues?
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+
+This Tableau dashboard titled "Global EcoInsights" provides an interactive visual representation of global climate data.
+* Temperature Trend:-
+  * Displays the average temperature change over time from 2000 to 2025.
+  * The green line shows temperature fluctuations, and a red dashed line indicates a reference trend.
+* Renewables vs CO₂ Emissions:-
+  * A scatter plot visualising the relationship between the percentage of renewable energy used and CO₂ emissions.
+  * Different countries are represented with various colors.
+* Forest vs Weather Events:-
+  * Shows how the forest area (percentage of land) is related to extreme weather events over time.
+* Population vs CO₂ & Sea Level:-
+  * A bubble chart depicting the correlation between population size, CO₂ emissions per capita, and sea level rise.
+  * Bubble size and color represent different countries and their emission levels.
+* Global Climate Map:-
+  * A geographical visualisation using a world map, representing data related to temperature changes, emissions, or climate impact.
+* Interactive Controls:-
+  * Year Slider: Allows users to filter data for a specific year range.
+  * Country Filter: Enables users to focus on specific countries.
+  * Sea Level Rise Markers: Displays sea level rise measurements using selectable radio buttons.
+  * Temperature Indicator: Provides a color-coded bar displaying average temperatures.
+
+![alt text](<Insights Tableau_dashboard.png>)
+
+https://public.tableau.com/app/profile/mukti.mathapati/viz/GlobalEcoInsights_17425611140370/GlobalEcoInsightsReport?publish=yes
+
+### Key Insights 
+This dashboard effectively visualises the interconnections between population growth, CO₂ emissions, renewable energy adoption, forest cover, and climate impacts like temperature rise and sea level changes. It’s a valuable tool for decision-makers and environmental analysts to track and predict climate change impacts.
 
 ## Unfixed Bugs
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
@@ -107,20 +151,6 @@ Columns: 10
 ## Development Roadmap
 * What challenges did you face, and what strategies were used to overcome these challenges?
 * What new skills or tools do you plan to learn next based on your project experience? 
-
-## Deployment
-### Heroku
-
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 
 ## Main Data Analysis Libraries
@@ -143,7 +173,7 @@ Columns: 10
 - The photos used on the home and sign-up page are from This Open-Source site
 - The images used for the gallery page were taken from this other open-source site
 
-
+# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 ## Acknowledgements
 * Thank the people who provided support through this project.
